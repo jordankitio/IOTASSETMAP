@@ -119,7 +119,7 @@ async function main() {
         // Get the first result's coordinates and zoom to it
         const result = data.Results[0];
         const coordinates = result.Place.Geometry.Point;
-        zoomToLocation(coordinates[1], coordinates[0], 5);
+        zoomToLocation(coordinates[1], coordinates[0], 10);
 
         // Add a marker for the searched location
         const marker = new maplibregl.Marker()
